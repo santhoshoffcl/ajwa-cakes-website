@@ -104,6 +104,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
       });
     });
+
+    // Close menu when viewport is resized to desktop width
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1024) {
+        if (nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
+      }
+    }, { passive: true });
   }
 
   /* ── 5. ACTIVE NAV SECTION HIGHLIGHT ── */
@@ -245,6 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
   productCards.forEach(card => {
     const inner = card.querySelector('.product-card-inner');
     card.addEventListener('mousemove', e => {
+      if (window.innerWidth <= 1024) return; // Disable tilt on touch/mobile viewports
       const r = card.getBoundingClientRect();
       const x = e.clientX - r.left - r.width  / 2;
       const y = e.clientY - r.top  - r.height / 2;
