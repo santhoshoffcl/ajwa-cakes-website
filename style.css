@@ -2086,3 +2086,113 @@ section { padding: 110px 0; position: relative; overflow: hidden; }
     font-size: 0.75rem;
   }
 }
+
+/* ─── 21. STEP 01 IMAGE CUSTOM STYLES ─── */
+.step-01-grid {
+  grid-template-columns: 45fr 55fr !important;
+  align-items: center !important; /* Keep the text vertically centered with the image */
+}
+
+.step-01-image {
+  height: 380px !important; /* Increased height from 320px */
+  background-color: #080808 !important; /* Subtle dark background so empty space blends */
+  border-radius: var(--radius-md) !important;
+  overflow: hidden !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+.step-01-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+@media (max-width: 768px) {
+  .step-01-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .step-01-image {
+    height: 320px !important; /* Adjust height on tablet */
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .step-01-image {
+    height: 280px !important; /* Adjust height on mobile */
+  }
+}
+
+/* ─── 22. STEP 02 IMAGE CUSTOM STYLES ─── */
+.step-02-image {
+  background-color: #0d0d0d !important; /* Subtle dark background so empty space blends */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+.step-02-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+/* ─── 23. STEP 03 IMAGE CUSTOM STYLES ─── */
+.step-03-image {
+  background-color: #0d0d0d !important; /* Subtle dark background so empty space blends */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+.step-03-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+/* ─── 24. STEP 04 IMAGE CUSTOM STYLES ─── */
+.step-04-image {
+  background-color: #0d0d0d !important; /* Subtle dark background so empty space blends */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+.step-04-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+/* ─── 25. STEP 05 IMAGE CUSTOM STYLES ─── */
+.step-05-image {
+  background-color: #0d0d0d !important; /* Subtle dark background so empty space blends */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+.step-05-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
